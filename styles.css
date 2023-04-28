@@ -5,6 +5,13 @@ body {
   font-size: 16px;
   color:black;
 }
+section {
+  border-top: 30px solid transparent;
+  margin-top: -30px;
+  background-clip: padding-box;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+}
 h1 {
   font-family: 'Forum', cursive;
   font-style: normal;
@@ -17,12 +24,23 @@ h1 {
 h2 {
   font-style: normal;
   font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: #590A60;
+}
+h3 {
+  font-style: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 32px;
   color: #590A60;
 }
-h3 {
-  font-size: 16px;
+ 
+/* Делаем гамбургер белым принудительно */
+.navbar .navbar-toggler-icon {
+  background-color: #967B9D;
+  opacity: 1;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 
@@ -41,23 +59,16 @@ h3 {
   /* margin-right: auto; */
 }
 
-.nav1-link {
+.dropdown-item {
   font-family: 'Chango';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color:black;
+  font-size: 31px;
+  /* line-height: 43.33px; */
+  color: #590A60;
+  
 }
 
-.nav2-link {
-  font-family: 'Charm';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 39px;
-  color:black;
-}
 
 .hero-box1{
   position: absolute;
@@ -68,7 +79,6 @@ h3 {
   background: #F5F5F5;
   color: black;
   border-radius: 45px; 
- 
   font-family: 'Forum', cursive;
   text-align: left;
   z-index: 2;
@@ -81,7 +91,6 @@ h3 {
   margin-top: 18px;
   color: #590A60;
   background-blend-mode: darken;
-
 }
 
 .hero-box1-2{
@@ -135,21 +144,17 @@ h3 {
  }
   .picback3{
     background: url(img/star.svg); 
-    background-size:720px;
+    background-size:800px;
     background-repeat: no-repeat;
-    background-position:  right 40px top -10px;
+    background-position:  right 40px top -0px;
     min-height: 550px;
-  
  }
  .block2 {
   max-width: 150px; 
   height: 240px;
   border-radius: 45px;
-  /* margin-left: 44px; */
-  padding-left: -44px;
-  background-color: #FFFEF9;
+  background-color: #EEDAA6;;
   text-align: center;
-
 }
 
 .footer-area {
@@ -173,6 +178,7 @@ h3 {
     background-size:700px;
     background-position:  0px 0px;
    }
+
 }
 @media (max-width: 768px) {
   .hero-box1{
@@ -184,14 +190,13 @@ h3 {
     width: 445px;
     right: 5px;
    } 
-
- 
-}
-@media (max-width: 575px) {
-  .block2 {
+   .block2 {
     max-width: 100000px; 
     height: auto;
-    background-color: rgba(255, 255, 255, 0);
-   }
+    border-radius: 0px;
+    /* margin-top: 50px; */
+  } 
+}
+@media (max-width: 575px) {
 
 }
