@@ -63,7 +63,7 @@ h3 {
   font-family: 'Chango';
   font-style: normal;
   font-weight: 400;
-  font-size: 31px;
+  font-size: 25px;
   /* line-height: 43.33px; */
   color: #590A60;
   
@@ -131,22 +131,22 @@ h3 {
 }
 .picback{
   background: url(img/star.svg); 
-  background-size: 80%;
+  background-size: 70%;
   background-repeat: no-repeat;
-  background-position:  30px auto;
+  background-position:  90px 100px;
  }
  .picback2{
   background: url(img/star.svg); 
   background-size:720px;
   background-repeat: no-repeat;
-  background-position:  right 40px bottom 30px;
+  background-position:  right 15px bottom 50px;
   min-height: 900px;
  }
   .picback3{
     background: url(img/star.svg); 
     background-size:800px;
     background-repeat: no-repeat;
-    background-position:  right 40px top -0px;
+    background-position:  right 0px bottom 300px;
     min-height: 550px;
  }
  .block2 {
